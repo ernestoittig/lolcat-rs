@@ -4,6 +4,7 @@ description = "Rainbow coloring effect for text console display, now lightning f
 version = "0.1.0"
 authors = ["Ernesto Ittig <e.ittig@gmail.com>"]
 edition = "2018"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
