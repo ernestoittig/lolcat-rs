@@ -49,7 +49,8 @@ fn main() -> io::Result<()> {
                 lolify(reader, &mut io::stdout(), &opts)?;
             } else {
                 for line in reader.lines() {
-                    let line = line.expect(&format!("Could not read line from file {}", filename));
+                    let line = line
+                        .unwrap_or_else(|_| panic!("Could not read line from file {}", filename));
                     println!("{}", line);
                 }
             }
