@@ -4,7 +4,8 @@ pub mod opts;
 use opts::Opts;
 
 /// Make the text from the input pretty colors
-pub fn lolify<Input, Output>(input: Input, output: &mut Output, opts: &Opts) -> io::Result<()> where
+pub fn lolify<Input, Output>(input: Input, output: &mut Output, opts: &Opts) -> io::Result<()>
+where
     Input: BufRead,
     Output: Write,
 {
